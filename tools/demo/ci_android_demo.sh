@@ -19,11 +19,12 @@ fi
 ####################################################################################################
 # 1.1 compile paddlelite android lib
 function compile_lib {
-  git clone https://github.com/PaddlePaddle/Paddle-Lite.git
-  chmod 666 Paddle-Lite
-  # compile paddlelite lib
-  # eg. cd Paddle-lite && ./lite/tools/build_android.sh --with_extra=ON
-  cd Paddle-lite && ./lite/tools/build_android.sh --with_extra=ON
+#   git clone https://github.com/PaddlePaddle/Paddle-Lite.git
+#   chmod 666 Paddle-Lite
+#   # compile paddlelite lib
+#   # eg. cd Paddle-lite && ./lite/tools/build_android.sh --with_extra=ON
+#   cd Paddle-lite && ./lite/tools/build_android.sh --with_extra=ON
+    ./lite/tools/build_android.sh --with_extra=ON
 }
 
 # 1.2 compile_and_install_opt
